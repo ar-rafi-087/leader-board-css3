@@ -130,3 +130,23 @@ main{
 .fa-star.empty{
     color: #AEAEAE;
 }
+
+/* ------------------
+     Media Queries
+   ------------------ */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .player , .blog , .course{
+        flex-direction: column;
+        align-items: center;
+    }
+    .players, .blogs , .courses{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+}
